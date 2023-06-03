@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(56, 141, 190);
+            height : 300vh;
+        }
+        h1{
+            font-size: 50px;
+            padding: 20px;
+        }
+        .box {
+            width : 60px;
+            height : 60px;
+            
+            position : absolute;
+            top: 50%;
+            left: 50%;
+            transform : translate(-50% -50%);
+            
+            
+        }
+        .box img {
+            width: 200px;
+            
+        }
+        
+    </style>
+    <script>
+        window.onload=()=>{
+            const h1 = document.querySelector("h1");
+            const box = document.querySelector(".box");
+            const speed = 0.05;
+            let x =0
+            let y = 0
+            let targetX=0;
+            let targetY=0;
+            window.addEventListener("mousemove",(e)=>{
+                x = e.pageX;
+                y = e.pageY;
+                
+                h1.innerText = ` x : ${event.pageX} y : ${event.pageY}`;
+            })
+            //부드럽게 따라오는 (계속해서 위치를 감시함)
+            const loop=()=>{
+                targetX+=(x-targetX)*speed;
+                targetY+=(y-targetY)*speed;
+
+                box.style.top = targetY+"px";
+                box.style.left = targetX+"px";
+                
+
+                window.requestAnimationFrame(loop);
+            };
+            loop();
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>test</h1>
+    <div class="box">
+        <img src="butterfly.gif">
+    </div>
+    
+</body>
+</html>
