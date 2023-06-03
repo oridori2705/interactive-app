@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(190, 102, 179);
+            /*화면을 꽉 채워서 바깥으로 나가는 건 안보이게 한다는 뜻*/
+            overflow: hidden; /*스크롤이 생기면 없애주는 것*/
+        }
+        .gateBox{
+            position : absolute; /*absoulte로 바꾸고 top 50% left 50%를 주면 뷰포트 가운데로 온다.*/
+            top : 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /*이걸 같이 해줘야 정확히 가운데로 온다.*/
+            background-color: red;
+            width : 200px;
+            padding : 30px;
+        
+        }
+        .gateBox .top{
+            background-color: aqua;
+            padding: 20px;
+        }
+        .gateBox .bottom{
+            background-color: bisque;
+            padding : 20px;
+            display : flex;
+            justify-content : space-around;
+        }
+        .gateBox .bottom a{
+            color : #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="gateBox">
+        <div class="top">
+            <p>어떤 일에 몰두한 적이 있습니까?</p>
+        </div>
+        <div class="bottom">
+            <a href="#yes">Yes</a>
+            <a href="#no">No</a>
+        </div>
+    </div>
+</body>
+</html>
