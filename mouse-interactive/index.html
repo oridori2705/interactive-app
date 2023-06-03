@@ -18,10 +18,10 @@
             width : 60px;
             height : 60px;
             
-            position : absolute;
-            top: 50%;
+            position : absolute;/*요소 위를 이동할 수 있도록*/
+            top: 50%; /*초기 top과 left를 선언, 커서와의 거리임*/
             left: 50%;
-            transform : translate(-50% -50%);
+            transform : translate(-50% -50%); /*커서에서 조금 붙게 하기 위해*/
             
             
         }
@@ -32,13 +32,14 @@
         
     </style>
     <script>
+        //window.onload : 모두 렌더링 되고 시작(div 태그같은거 가져올 때 필요-> body는 아직 렌더링이 안되므로)
         window.onload=()=>{
             const h1 = document.querySelector("h1");
             const box = document.querySelector(".box");
-            const speed = 0.05;
-            let x =0
+            const speed = 0.05;/*나비가 움직일 속도*/
+            let x =0 /*마우스의 pageX값과 pageY값을 가져옴*/
             let y = 0
-            let targetX=0;
+            let targetX=0; //tartgeX와 targerY를 통해서 천천히 마우스가 있는 쪽으로 이동함 
             let targetY=0;
             //마우스의 좌표를 계속 추출함
             window.addEventListener("mousemove",(e)=>{
@@ -49,16 +50,16 @@
             })
             //부드럽게 따라오는 (계속해서 위치를 감시함)
             const loop=()=>{
-                targetX+=(x-targetX)*speed;
+                targetX+=(x-targetX)*speed; /*현재 좌표 x에서 0.05를 곱한 값만큼 움직이면서 마우스를 쫒아감*/
                 targetY+=(y-targetY)*speed;
 
-                box.style.top = targetY+"px";
+                box.style.top = targetY+"px"; //box스타일의 top과 left를 바꿔준다. 그래야 나비가 움직인다. +"px"를 꼭 붙여야함
                 box.style.left = targetX+"px";
                 
 
-                window.requestAnimationFrame(loop);
+                window.requestAnimationFrame(loop); //Loop를 통해 계속해서 마우스의 위치름 검사한다. ->그래야 천천히 0.05씩 곱하면서 이동함
             };
-            loop();
+            loop(); //loop를 실행을 해줘야 나비가 움직임
         }
         
     </script>
