@@ -2,6 +2,7 @@
  인터렉티브 앱만들기
 
 # MouseMove를 활용한 나비가 따라다는 기능
+![ezgif com-video-to-gif (1)](https://github.com/oridori2705/interactive-app/assets/90139306/68b8f24a-67cf-45ab-97b3-109aa7162e4a)
 
 
 
