@@ -17,18 +17,24 @@
 <br>
 <br>
 
-# 스크롤을 이용한 페럴렉스 페이지 구현
+# 스크롤을 이용한 패럴렉스 페이지 구현
 ![deep sea](https://github.com/oridori2705/interactive-app/assets/90139306/5d548785-f252-490d-98bc-cb4613fd69cf)
 <br>
 <br>
 
-# 간단한 블로그에 페럴렉스 효과 구현
+# 간단한 블로그에 패럴렉스 효과 구현
 ![blog](https://github.com/oridori2705/interactive-app/assets/90139306/3adf218b-f90e-44c3-9b0a-81b4fb42255f)
 <br>
 <br>
 
-# 페럴렉스 사이트 구현하기
+# 패럴렉스 사이트 구현하기- 1
 ![parallx_site1](https://github.com/oridori2705/interactive-app/assets/90139306/636f1341-62de-4328-9e56-cb739c17a994)
+<br>
+<br>
+# 패럴렉스 사이트 구현하기 -2 (translate3d 사용)
+
+<br>
+<br>
 # Skills
 ### ❤HTML
 <br>
