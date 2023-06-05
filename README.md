@@ -31,6 +31,9 @@
 <br>
 
 # Skills
-HTML
-CSS
-JavaScript
+### ❤HTML
+<br>
+### 🧡CSS
+<br>
+### 💛JavaScript
+<br>
