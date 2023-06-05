@@ -3,13 +3,13 @@ body {
     /*cover : 사이즈부분임 (가득 채운다는 의미)*/
     background : url(../images/bg-pc.webp) center center / cover no-repeat;
     width : 100%;
-    height: 100vh;
+    height: 100vh;/*화면을 가득채움*/
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden; /*스크롤 제거*/
 }
 img {
-    width: 100%;
+    width: 100%;/*이미지들을 기본적으로 100%크기로*/
 }
 
 .title {
