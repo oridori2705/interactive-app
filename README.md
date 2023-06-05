@@ -27,10 +27,10 @@
 
 # 스크롤을 이용한 페럴렉스 페이지 구현
 ![ezgif com-video-to-gif](https://github.com/oridori2705/interactive-app/assets/90139306/d3ca8df4-29d4-4fdf-ba4a-b916014f3d83)
+<br>
+<br>
 
-
-
-#Skills
+# Skills
 HTML
 CSS
 JavaScript
