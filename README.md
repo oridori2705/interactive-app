@@ -19,24 +19,24 @@
 # MouseMove를 활용한 이미지에 생동감 주기
 
 
-![ezgif com-video-to-gif](https://github.com/oridori2705/interactive-app/assets/90139306/9a2fdd4d-bfa1-4318-b384-3d1ed5547151)
+![deep sea](https://github.com/oridori2705/interactive-app/assets/90139306/5d548785-f252-490d-98bc-cb4613fd69cf)
 
 <br>
 <br>
 
 
 # 스크롤을 이용한 페럴렉스 페이지 구현
-![ezgif com-video-to-gif](https://github.com/oridori2705/interactive-app/assets/90139306/d3ca8df4-29d4-4fdf-ba4a-b916014f3d83)
+![blog](https://github.com/oridori2705/interactive-app/assets/90139306/3adf218b-f90e-44c3-9b0a-81b4fb42255f)
 <br>
 <br>
 
 # 간단한 블로그에 페럴렉스 효과 구현
-![ezgif com-video-to-gif (1)](https://github.com/oridori2705/interactive-app/assets/90139306/09ee7634-2fa7-4f0c-86b2-24635996ef70)
+![blog](https://github.com/oridori2705/interactive-app/assets/90139306/3adf218b-f90e-44c3-9b0a-81b4fb42255f)
 <br>
 <br>
 
 # 페럴렉스 사이트 구현하기
-
+![parallx_site1](https://github.com/oridori2705/interactive-app/assets/90139306/636f1341-62de-4328-9e56-cb739c17a994)
 # Skills
 ### ❤HTML
 <br>
