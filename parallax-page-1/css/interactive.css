@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(#4b0220, #691c46);
+  
+}
+
+/*메인페이지와 서브페이지를 나눔*/
+/*relative : 요소 자기 자신의 원래 위치(static일 때의 위치)를 기준으로 배치한다. */
+/*원래 위치를 기준으로 위쪽(top), 아래쪽(bottom), 왼쪽(left), 오른쪽(right)에서 얼마만큼 떨어질 지 결정가능*/
+/*위치를 이동하면서 다른 요소에 영향을 주지 않는다. -> 겹칠 수 있음*/
+section {
+  position: relative;
+  width: 100%;
+}
+/*상단의 이미지들*/
+section.mainPage {
+  padding-bottom: 50px;
+}
+/*전체화면일때는 100vh를 준다.*/
+section.mainPage .imageWrap {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+/* only : 미디어쿼리를 지원하는 브라우저만 대상으로 할 경우에는 only 키워드를 사용하는 것이 좋다.  <> 반대는 all을 쓰면됨*/
+/*사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다. */
+/*768px 미만 해상도의 모바일 기기를 위한 코드를 작성*/
+@media only screen and (max-width: 768px) { 
+  section.mainPage .imageWrap {
+    height: 500px;
+  }
+}
+/*fixed와 height : inherit를 통해 이미지를 겹치게하고*/
+section.mainPage .imageWrap .parallaxImage {
+  position: fixed;
+  width: 100%;
+  height: inherit;
+  background-position: top center;/*백그라운드 이미지를 top기준으로 center에 위치*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*CSS에서 이미지를 삽입함*/
+/*.parallaxImage:nth-child(1) : parallxImage 자식요소중 1번째 형제에게 이미지 부여*/
+section.mainPage .imageWrap .parallaxImage:nth-child(1) {
+  background-image: url(../image/main_0.png);
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(2) {
+  background-image: url(../image/main_1.png);
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(3) {
+  background-image: url(../image/main_2.png);
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(4) {
+  background-image: url(../image/main_3.png);
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(5) {
+  background-image: url(../image/main_4.png);
+}
+section.mainPage .imageWrap .parallaxImage:nth-child(6) {
+  background-image: url(../image/main_5.png);
+}
+/*아래 본문내용이 있는 부분은 그라데이션을줌*/
+section.subPage {
+  background: linear-gradient(black, #340e23, black);
+}
+/*거기에 이미지를 relative로 주고, 백그라운드에 이미지를 넣음 */
+/*그래서 시작부분은 맨 왼쪽 위임
+하지만 top -400px로 그 요소부분을 위로 넘겨서 이미지가 배치됨 -> 이어지게끔 만듦*/
+section.subPage .parallaxImage {
+  position: relative;
+  background: url(../image/main_6.png) bottom center no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  top: -400px;
+  /* 위 이미지들이 fixed라서 top을 설정안하면 위 이미지들과 겹쳐버림*/
+}
+/*
+네 면 모두 적용 
+padding: 1em;
+
+세로방향 | 가로방향 
+padding: 5% 10%;
+
+위 | 가로방향 | 아래 
+padding: 1em 2em 2em;
+
+위 | 오른쪽 | 아래 | 왼쪽
+padding: 5px 1em 0 2em;
+
+*/
+section.subPage .innerWrap {
+  position: relative;
+  /*위아래에는 마진을 주지않고, 좌우만 균등하게 값을 두어 중앙에 두는 것*/
+  margin: 0 auto; 
+  padding: 100px 0 300px;
+}
+section.subPage .innerWrap .contWrap {
+  margin: auto; /*상하좌우 모두 균등하게 값을 두어 중앙에 두는것*/
+  padding: 20px 40px;
+  width: 700px; /*700을 줘서 700크기를 넘어가면 글씨가 줄바꿈됨*/
+}
+/*사용자 해상도가 768px 이하일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다. */
+@media only screen and (max-width: 768px) {
+  section.subPage .innerWrap .contWrap {
+    width: 100%; /*즉 768px보다 작아지면 width: 100%로 바꿔서 글씨가 위 아래로 줄바꿈이 늘어짐*/
+  }
+}
+
+section.subPage .innerWrap .contWrap p {
+  font-size: 20px;
+  line-height: 36px;
+  color: #f3f3f3;
+  margin: 20px 0;
+}/*# sourceMappingURL=interactive.css.map */

@@ -17,7 +17,7 @@ window.addEventListener("scroll", () => {
     scrollNum = window.scrollY;//스크롤 값
     //스크롤값이 오차없이 정확하게 하기위한 documentheight
     //document.body.scrollheight는 margin값을 가져오지 못한다. -> 퍼센트를 구할때 마진은 빼고 나와서 100%를 넘게됨
-    //그래서 헤더 커버이미지의 높이를 더햇음 (coverHeight)
+    //그래서 레이아웃 뷰포트 높이를 더햇음 (coverHeight)
     documentHeight =
         document.body.scrollHeight + coverHeight - window.innerHeight;
 
