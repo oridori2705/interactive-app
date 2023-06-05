@@ -32,6 +32,7 @@
 <br>
 <br>
 # 패럴렉스 사이트 구현하기 -2 (translate3d 사용)
+![pallax_site2](https://github.com/oridori2705/interactive-app/assets/90139306/9456ec4d-8af4-440a-972a-dbbae1112686)
 
 <br>
 <br>
