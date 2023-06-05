@@ -30,6 +30,12 @@
 <br>
 <br>
 
+# 간단한 블로그에 페럴렉스 효과 구현
+![ezgif com-video-to-gif (1)](https://github.com/oridori2705/interactive-app/assets/90139306/09ee7634-2fa7-4f0c-86b2-24635996ef70)
+<br>
+<br>
+
+
 # Skills
 ### ❤HTML
 <br>
