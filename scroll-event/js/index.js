@@ -8,6 +8,7 @@ let per=0;
 
 window.addEventListener('scroll', ()=>{
     scrollNum=window.scrollY;
+    /*스크롤값을 퍼센트로 나타내기위해서 (실제 전체길이 - window 화면사이즈) 해준다.*/
     documentheight= document.body.scrollHeight-window.innerHeight
 
     per= percent(scrollNum,documentheight);
